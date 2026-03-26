@@ -33,7 +33,7 @@ export default function Dashboard() {
       />
 
       <CompanyGrid
-       companies={filteredCompanies}
+      companies={filteredCompanies}
       selectedCompany={selectedCompany}
       onSelectCompany={handleSelectCompany}
       />
