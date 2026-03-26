@@ -1,6 +1,7 @@
 const companies = [
   {
     name: "AECOM",
+    industry: "Industrials",
     netZeroBy: "2040",
     renewableEnergyPct: "~25%",
     womenInLeadershipPct: "~26%",
@@ -10,6 +11,7 @@ const companies = [
   },
   {
     name: "Amazon",
+    industry: "Industrials",
     netZeroBy: "2040",
     renewableEnergyPct: "~90%",
     womenInLeadershipPct: "~28%",
@@ -20,6 +22,7 @@ const companies = [
   },
   {
     name: "Apple",
+    industry: "Information Technology",
     netZeroBy: "2030",
     renewableEnergyPct: "100%",
     womenInLeadershipPct: "~35%",
@@ -30,6 +33,7 @@ const companies = [
   },
   {
     name: "AT&T",
+    industry: "Information Technology",
     netZeroBy: "2035",
     renewableEnergyPct: "~27%",
     womenInLeadershipPct: "~34%",
@@ -39,6 +43,7 @@ const companies = [
   },
   {
     name: "Coca-Cola",
+    industry: "Consumer",
     netZeroBy: "2050",
     renewableEnergyPct: "~26%",
     womenInLeadershipPct: "~40%",
@@ -49,6 +54,7 @@ const companies = [
   },
   {
     name: "Costco",
+    industry: "Industrials",
     netZeroBy: "2050",
     renewableEnergyPct: "~26%",
     womenInLeadershipPct: "~34%",
@@ -58,6 +64,7 @@ const companies = [
   },
   {
     name: "eBay",
+    industry: "Consumer",
     netZeroBy: "2045",
     renewableEnergyPct: "~100%",
     womenInLeadershipPct: "~40%",
@@ -67,6 +74,7 @@ const companies = [
   },
   {
     name: "Garmin",
+    industry: "Information Technology",
     netZeroBy: "Not disclosed",
     renewableEnergyPct: "Not disclosed",
     womenInLeadershipPct: "~22%",
@@ -78,6 +86,7 @@ const companies = [
   },
   {
     name: "Intuit",
+    industry: "Information Technology",
     netZeroBy: "2040",
     renewableEnergyPct: "~100%",
     womenInLeadershipPct: "~36%",
@@ -87,6 +96,7 @@ const companies = [
   },
   {
     name: "Mastercard",
+    industry: "Information Technology",
     netZeroBy: "2040",
     renewableEnergyPct: "~100%",
     womenInLeadershipPct: "~43%",
@@ -97,6 +107,7 @@ const companies = [
   },
   {
     name: "Microsoft",
+    industry: "Information Technology",
     netZeroBy: "2030",
     renewableEnergyPct: "100%",
     womenInLeadershipPct: "~33%",
@@ -106,6 +117,7 @@ const companies = [
   },
   {
     name: "Netflix",
+    industry: "Information Technology",
     netZeroBy: "2030",
     renewableEnergyPct: "~100%",
     womenInLeadershipPct: "~36%",
@@ -115,6 +127,7 @@ const companies = [
   },
   {
     name: "Nike",
+    industry: "Consumer",
     netZeroBy: "2050",
     renewableEnergyPct: "~96%",
     womenInLeadershipPct: "~42%",
@@ -124,6 +137,7 @@ const companies = [
   },
   {
     name: "PepsiCo",
+    industry: "Consumer",
     netZeroBy: "2050",
     renewableEnergyPct: "~55%",
     womenInLeadershipPct: "~42%",
@@ -133,6 +147,7 @@ const companies = [
   },
   {
     name: "Starbucks",
+    industry: "Consumer",
     netZeroBy: "2050",
     renewableEnergyPct: "~76%",
     womenInLeadershipPct: "~50%+",
@@ -143,6 +158,7 @@ const companies = [
   },
   {
     name: "Subaru (SOA)",
+    industry: "Consumer",
     netZeroBy: "2050",
     renewableEnergyPct: "Partial (zero-landfill plant)",
     womenInLeadershipPct: "~30%",
@@ -153,6 +169,7 @@ const companies = [
   },
   {
     name: "T-Mobile",
+    industry: "Information Technology",
     netZeroBy: "2040",
     renewableEnergyPct: "~100%",
     womenInLeadershipPct: "~38%",
@@ -162,6 +179,7 @@ const companies = [
   },
   {
     name: "Toyota (US/TMNA)",
+    industry: "Consumer",
     netZeroBy: "2050",
     renewableEnergyPct: "~30%",
     womenInLeadershipPct: "~20%",
@@ -172,6 +190,7 @@ const companies = [
   },
   {
     name: "Verizon",
+    industry: "Information Technology",
     netZeroBy: "2050",
     renewableEnergyPct: "~53%",
     womenInLeadershipPct: "~36.9%",
@@ -182,6 +201,7 @@ const companies = [
   },
   {
     name: "Walmart",
+    industry: "Consumer",
     netZeroBy: "2040",
     renewableEnergyPct: "~36%",
     womenInLeadershipPct: "~33%",
@@ -192,6 +212,7 @@ const companies = [
   },
   {
     name: "Waste Management",
+    industry: "Industrials",
     netZeroBy: "2031",
     renewableEnergyPct: "~5%",
     womenInLeadershipPct: "~22%",
