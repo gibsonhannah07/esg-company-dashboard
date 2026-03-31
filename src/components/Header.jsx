@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <h1>ESG Company Scorecard</h1>
+      <h1>ESG Metrics Dashboard</h1>
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/dashboard">Dashboard</NavLink>
