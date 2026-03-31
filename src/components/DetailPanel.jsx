@@ -1,9 +1,30 @@
-import React from 'react'
+import ScoreBar from "./ScoreBar";
 
-export default function DetailPanel() {
+export default function DetailPanel({ company, onClose }) {
   return (
     <div className="detail-panel">
-      <p> sample text</p>
+
+      <div className="detail-header">
+        <div>
+          <h2 className="detail-name">{company.name}</h2>
+          <p className="detail-sub">{company.industry}</p>
+        </div>
+        <button className="btn-close" onClick={onClose}>Close</button>
+      </div>
+
+      <ul className="detail-metrics">
+        <li>Net Zero Goal Year <span>{company.netZeroBy}</span></li>  
+        <li>Renewable Energy <span>{company.renewableEnergyPct}</span></li>
+        <li>Women in Leadership <span>{company.womenInLeadershipPct}</span></li>
+        <li>CEO Pay Ratio <span>{company.ceoPayRatio}</span></li>
+      </ul>
+
+      <p className="detail-description">{company.notes}</p>
+
+      <p className="detail-description">
+        <strong>Source: </strong>{company.source}
+      </p>
+
     </div>
-  )
+  );
 }
