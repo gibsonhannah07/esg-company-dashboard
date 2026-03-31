@@ -6,7 +6,7 @@ function CompanyGrid({ companies, selectedCompany, onSelectCompany }) {
   }
 
   return (
-    <section>
+    <div className="company-grid">
       {companies.map(company => (
         <CompanyCard
           key={company.id}
@@ -15,7 +15,7 @@ function CompanyGrid({ companies, selectedCompany, onSelectCompany }) {
           isSelected={selectedCompany?.id === company.id}
         />
       ))}
-    </section>
+    </div>
   );
 }
 
