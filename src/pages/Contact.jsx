@@ -25,12 +25,12 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className="contact-section">
       <h2>Contact Us</h2>
       <p>Have companies you want added or any questions? Contact us for more information and you'll receive a response shortly!</p>
-      {submitted && <p>Thank you! Your message has been sent.</p>}
-      <form onSubmit={handleSubmit}>
-        <div>
+      {submitted && <p className="contact-success">Thank you! Your message has been sent and we will get back to you shortly.</p>}
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-group">
           <label>Name: </label>
           <input
             type="text"
@@ -40,7 +40,7 @@ export default function Contact() {
             placeholder="Full name"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Email: </label>
           <input
             type="email"
@@ -50,7 +50,7 @@ export default function Contact() {
             placeholder="Email address"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Select category: </label>
           <select name="category" value={formData.category} onChange={handleChange}>
             <option value="">-- Select a Category --</option>
@@ -59,7 +59,7 @@ export default function Contact() {
             <option value="concern">Concern or bug</option>
           </select>
         </div>
-        <div>
+        <div className="form-group">
           <label>Message: </label>
           <textarea
             name="message"
@@ -69,7 +69,7 @@ export default function Contact() {
             rows="5"
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn-primary">Submit</button>
       </form>
     </div>
   );
