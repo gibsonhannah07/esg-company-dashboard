@@ -7,10 +7,18 @@ import DetailPanel from "../components/DetailPanel";
 export default function Dashboard() {
   const [selectedCompany, setSelectedCompany] = useState(null);
   const [filterIndustry, setFilterIndustry] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredCompanies = filterIndustry === "All"
-    ? companies
-    : companies.filter((company) => company.industry === filterIndustry);
+  const filteredCompanies = companies.filter((company) => {
+    const matchesIndustry =
+      filterIndustry === "All" || company.industry === filterIndustry;
+
+    const matchesSearch = company.name
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+
+    return matchesIndustry && matchesSearch;
+  }); 
 
   const industryOptions = [
     "All",
@@ -30,8 +38,16 @@ export default function Dashboard() {
       <div className="dashboard-header">
         <h2>Company Dashboard</h2>
       </div>
+      <div className="search-bar">
+         <input
+          type="text"
+          placeholder="Search a company..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
 
-      <FilterBar
+      <FilterBar 
         industries={industryOptions}
         selected={filterIndustry}
         onFilterChange={setFilterIndustry}

@@ -1,8 +1,15 @@
 import CompanyCard from "./CompanyCard";
 
-function CompanyGrid({ companies, selectedCompany, onSelectCompany }) {
+export default function CompanyGrid({ companies, selectedCompany, onSelectCompany, searchQueary }) {
+  if (companies.length === 0 && searchQueary) {
+    return (
+    <p>No results found for "{searchQueary}", try searching another company name. </p>
+  );
+}
   if (companies.length === 0) {
-    return <p>No companies match your search.</p>;
+    return (
+      <p className="empty-state">No companies match your filter.</p>
+    );
   }
 
   return (
@@ -18,5 +25,3 @@ function CompanyGrid({ companies, selectedCompany, onSelectCompany }) {
     </div>
   );
 }
-
-export default CompanyGrid;
