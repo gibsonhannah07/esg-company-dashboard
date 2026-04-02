@@ -1,5 +1,3 @@
-import ScoreBar from "./ScoreBar";
-
 export default function DetailPanel({ company, onClose }) {
   return (
     <div className="detail-panel">
@@ -19,7 +17,7 @@ export default function DetailPanel({ company, onClose }) {
         <li>CEO Pay Ratio <span>{company.ceoPayRatio}</span></li>
       </ul>
 
-      <p className="detail-description">{company.notes}</p>
+      <p className="detail-description"><strong>Notes: </strong>{company.notes}</p>
 
       <p className="detail-description">
         <strong>Source: </strong>{company.source}

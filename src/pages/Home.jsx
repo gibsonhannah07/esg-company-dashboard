@@ -5,7 +5,7 @@ function Home() {
     <section>
 
       <div className="home-hero">
-        <h2>Welcome to the ESG Metrics Dashboard</h2>
+        <h2>ESG Metrics Dashboard</h2>
         <p>
           Browse and compare companies based on three chosen Environmental,
           Social, and Governance (ESG) metrics — so you can make more informed
