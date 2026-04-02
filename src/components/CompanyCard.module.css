@@ -2,22 +2,20 @@
 .card {
   background-color: var(--bg-white);
   border: 1px solid var(--border);
+  border-top: 3px solid var(--green-mid);
   border-radius: var(--border-radius);
   padding: 20px;
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .card:hover {
-  border-color: var(--green-border);
   background-color: var(--bg-hover);
-  box-shadow: var(--shadow-md);
+  border-color: var(--green-border);
 }
 
 .selected {
-  border-color: var(--green-mid);
-  border-width: 2px;
-  background-color: var(--bg-hover);
-  box-shadow: var(--shadow-md);
+  border-color: var(--blue-border);
+  border-top: 3px solid var(--blue-mid);
+  background-color: var(--blue-light);
 }

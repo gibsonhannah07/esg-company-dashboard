@@ -7,9 +7,11 @@ import DetailPanel from "../components/DetailPanel";
 export default function Dashboard() {
   const [selectedCompany, setSelectedCompany] = useState(null);
   const [filterIndustry, setFilterIndustry] = useState("All");
+
   const filteredCompanies = filterIndustry === "All"
     ? companies
     : companies.filter((company) => company.industry === filterIndustry);
+
   const industryOptions = [
     "All",
     ...new Set(companies.map((c) => c.industry)),
@@ -23,27 +25,34 @@ export default function Dashboard() {
     setSelectedCompany(null);
   }
 
-  return (
+  return ( 
     <section>
-      <h2>Company Dashboard</h2>
-      <FilterBar 
-      industries={industryOptions}
-      selected={filterIndustry}
-      onFilterChange={setFilterIndustry}
+      <div className="dashboard-header">
+        <h2>Company Dashboard</h2>
+      </div>
+
+      <FilterBar
+        industries={industryOptions}
+        selected={filterIndustry}
+        onFilterChange={setFilterIndustry}
       />
 
       <CompanyGrid
-       companies={filteredCompanies}
-      selectedCompany={selectedCompany}
-      onSelectCompany={handleSelectCompany}
+        companies={filteredCompanies}
+        selectedCompany={selectedCompany}
+        onSelectCompany={handleSelectCompany}
       />
 
       {selectedCompany && (
-        <DetailPanel
-          company={selectedCompany}
-          onClose={handleCloseDetail}
-        />
+        <div className="modal-overlay" onClick={handleCloseDetail}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <DetailPanel
+              company={selectedCompany}
+              onClose={handleCloseDetail}
+            />
+          </div>
+        </div>
       )}
     </section>
-    )
+  );
 }
