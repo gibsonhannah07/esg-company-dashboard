@@ -287,6 +287,31 @@ button {
   outline: none;
 }
 
+
+/* search bar */
+/* ── Search Bar ────────────────────────────────────────────────────────────── */
+.search-bar {
+  margin-bottom: 16px;
+}
+
+.search-bar input {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-white);
+  color: var(--text-primary);
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--blue-mid);
+  background-color: var(--bg-white);
+}
+
 /* Dashboard Header */
 .dashboard-header {
   display: flex;

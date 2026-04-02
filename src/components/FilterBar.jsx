@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ({ industries, selected, onFilterChange }) {
   return (
-    <div>
+    <div className="filter-bar">
       <label htmlFor="industry-filter">Filter by Industry:</label>
       <select
         id="industry-filter"
