@@ -1,4 +1,6 @@
 import { useState} from 'react'
+import headshot from "../assets/headshot.png";
+
 
 export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
@@ -71,6 +73,51 @@ export default function Contact() {
         </div>
         <button type="submit" className="btn-primary">Submit</button>
       </form>
+      <div className="about-me-box">
+        <img
+          src={headshot}
+          alt="headshot photo"
+          className="about-me-photo"
+        />
+        <div className="about-me-text">
+          <h3>About the developer</h3>
+          <p>
+           Hannah is a software developer in <strong>LaunchCode's Women+ Software Development 
+           class</strong> with a passion for building intuitive tools that make information accessible 
+          and easier to understand. She created this ESG Dashboard to help users explore sustainability 
+          data with the clarity and confidence needed to make informed decisions on companies where they work, 
+          invest in, or buy from. 
+          Connect with her to learn more!
+          </p>
+          <div className="about-links">
+            <a
+              href="https://github.com/gibsonhannah07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-bubble"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="www.linkedin.com/in/hannah-gibson-9a4169172"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-bubble"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:gibsonhannah07@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-bubble"
+            >
+              Email
+            </a>
+          </div>
+        </div>
     </div>
+  </div>
   );
 }
