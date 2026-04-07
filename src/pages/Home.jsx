@@ -5,7 +5,7 @@ function Home() {
     <section>
 
       <div className="home-hero">
-        <h2>ESG Metrics Dashboard</h2>
+        <h2> 🌎 ESG Metrics Dashboard 🌎 </h2>
         <p>
           Browse and compare companies based on three chosen Environmental,
           Social, and Governance (ESG) metrics — so you can make more informed
@@ -20,7 +20,7 @@ function Home() {
         <p>
           Most people choose where to work, shop, and invest based on salary or
           price. But a company's Environmental, Social, and Governance (ESG)
-          record tells a deeper story — how they value their workers, the planet,
+          record tells a deeper story; how they value their workers, the planet,
           and the communities around them. This dashboard makes that information
           simple to find and easy to understand, so you can feel confident about
           your decisions.

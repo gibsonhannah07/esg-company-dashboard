@@ -86,7 +86,7 @@ export default function Contact() {
            class</strong> with a passion for building intuitive tools that make information accessible 
           and easier to understand. She created this ESG Dashboard to help users explore sustainability 
           data with the clarity and confidence needed to make informed decisions on companies where they work, 
-          invest in, or buy from. 
+          invest in, or buy from.
           Connect with her to learn more!
           </p>
           <div className="about-links">
@@ -98,9 +98,8 @@ export default function Contact() {
             >
               GitHub
             </a>
-
             <a
-              href="www.linkedin.com/in/hannah-gibson-9a4169172"
+              href="https://www.linkedin.com/in/hannah-gibson-9a4169172/"
               target="_blank"
               rel="noopener noreferrer"
               className="about-bubble"
@@ -109,8 +108,6 @@ export default function Contact() {
             </a>
             <a
               href="mailto:gibsonhannah07@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
               className="about-bubble"
             >
               Email

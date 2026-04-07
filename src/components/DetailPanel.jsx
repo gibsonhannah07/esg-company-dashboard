@@ -11,10 +11,10 @@ export default function DetailPanel({ company, onClose }) {
       </div>
 
       <ul className="detail-metrics">
-        <li>Net Zero Goal Year <span>{company.netZeroBy}</span></li>  
-        <li>Renewable Energy <span>{company.renewableEnergyPct}</span></li>
-        <li>Women in Leadership <span>{company.womenInLeadershipPct}</span></li>
-        <li>CEO Pay Ratio <span>{company.ceoPayRatio}</span></li>
+        <li>🌎 Net Zero Goal Year <span>{company.netZeroBy}</span></li>  
+        <li>🌱 Renewable Energy <span>{company.renewableEnergyPct}</span></li>
+        <li>👥 Women in Leadership <span>{company.womenInLeadershipPct}</span></li>
+        <li>🏛 CEO Pay Ratio <span>{company.ceoPayRatio}</span></li>
       </ul>
 
       <p className="detail-description"><strong>Notes: </strong>{company.notes}</p>
