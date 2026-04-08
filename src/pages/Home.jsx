@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import "../styles/pages/Home.css";
 
-function Home() {
+
+export default function Home() {
   return (
     <section>
 
@@ -66,5 +68,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;

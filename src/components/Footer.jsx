@@ -1,4 +1,6 @@
-function Footer() {
+import "../styles/components/Footer.css";
+
+export default function Footer() {
   return (
     <footer>
       <p>ESG Company Scorecard Dashboard | LaunchCode W+ Unit 1 Project</p>
@@ -7,5 +9,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

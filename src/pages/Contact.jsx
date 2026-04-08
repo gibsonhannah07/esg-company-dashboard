@@ -1,4 +1,5 @@
 import { useState} from 'react'
+import "../styles/pages/Contact.css";
 import headshot from "../assets/headshot.png";
 
 
