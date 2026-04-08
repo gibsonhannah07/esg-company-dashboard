@@ -1,3 +1,6 @@
+import "../styles/components/DetailPanel.css";
+
+
 export default function DetailPanel({ company, onClose }) {
   return (
     <div className="detail-panel">

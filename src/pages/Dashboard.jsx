@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/pages/Dashboard.css";
 import companies from "../data/companyData";
 import CompanyGrid from "../components/CompanyGrid";
 import FilterBar from "../components/FilterBar"

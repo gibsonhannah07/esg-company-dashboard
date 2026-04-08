@@ -1,4 +1,5 @@
 import CompanyCard from "./CompanyCard";
+import "../styles/components/CompanyGrid.css";
 
 export default function CompanyGrid({ companies, selectedCompany, onSelectCompany, searchQueary }) {
   if (companies.length === 0 && searchQueary) {

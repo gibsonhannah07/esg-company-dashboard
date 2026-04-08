@@ -1,4 +1,7 @@
-function About() {
+import "../styles/pages/About.css";
+
+
+export default function About() {
   return (
     <section className="about-section">
 
@@ -109,5 +112,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

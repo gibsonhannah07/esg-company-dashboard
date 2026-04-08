@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   return (
-    <header>
-      <h1>ESG Metrics Dashboard</h1>
-      <nav>
+    <header className="site-header">
+      <NavLink to="/" className="site-title">
+        ESG Metrics Dashboard
+      </NavLink>
+
+      <nav className="main-nav">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/dashboard">Dashboard</NavLink>
         <NavLink to="/about">About</NavLink>
@@ -13,5 +16,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

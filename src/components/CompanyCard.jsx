@@ -1,6 +1,6 @@
-import styles from "./CompanyCard.module.css";
+import "../styles/components/CompanyCard.css";
 
-function CompanyCard({ company, onSelect, isSelected }) {
+export default function CompanyCard({ company, onSelect, isSelected }) {
   return (
     <div
       className={`company-card ${isSelected ? "selected" : ""}`}
@@ -16,5 +16,3 @@ function CompanyCard({ company, onSelect, isSelected }) {
     </div>
   );
 }
-
-export default CompanyCard;

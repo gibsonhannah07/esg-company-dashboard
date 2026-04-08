@@ -1,3 +1,4 @@
+import "../styles/components/FilterBar.css";
 import React from 'react'
 
 export default function ({ industries, selected, onFilterChange }) {
