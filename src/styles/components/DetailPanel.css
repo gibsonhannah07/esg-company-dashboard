@@ -1,10 +1,9 @@
 .detail-panel {
   background-color: var(--bg-white);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--blue-mid);
+  border: 4px solid var(--blue-mid);
   border-radius: var(--border-radius);
   padding: 28px;
-  margin-top: 24px;
 }
 
 .detail-header {
@@ -23,6 +22,7 @@
 
 .detail-sub {
   font-size: 13px;
+  font-style: italic;
   color: var(--text-muted);
 }
 
@@ -32,6 +32,17 @@
   flex-direction: column;
   gap: 12px;
   margin-bottom: 20px;
+}
+
+.btn-add-company {
+  background-color: var(--blue-mid);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .detail-metrics li {
@@ -58,6 +69,20 @@
   padding-top: 16px;
   border-top: 1px solid var(--border);
 }
+
+.detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.detail-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
 
 @media (max-width: 768px) {
   .detail-panel {

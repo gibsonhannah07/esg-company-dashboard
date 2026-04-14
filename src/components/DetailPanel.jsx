@@ -1,7 +1,7 @@
 import "../styles/components/DetailPanel.css";
 
 
-export default function DetailPanel({ company, onClose }) {
+export default function DetailPanel({ company, onClose, onCompare }) {
   return (
     <div className="detail-panel">
 
@@ -12,6 +12,12 @@ export default function DetailPanel({ company, onClose }) {
         </div>
         <button className="btn-close" onClick={onClose}>Close</button>
       </div>
+
+      <button className="btn-add-company"
+        style={{ marginBottom: "20px" }}
+        onClick={() => onCompare(company)} >
+        + Add to Compare
+      </button>
 
       <ul className="detail-metrics">
         <li>🌎 Net Zero Goal Year <span>{company.netZeroBy}</span></li>  
