@@ -8,7 +8,6 @@ const EMPTY_FORM = {
   womenInLeadershipPct: "",
   ceoPayRatio: "",
   notes: "",
-  source: "",
 };
 
 export default function AddCompany({ onAdd, onClose }) {
@@ -45,12 +44,12 @@ export default function AddCompany({ onAdd, onClose }) {
           {error && <p className="error-text">{error}</p>}
 
           {[
-            { label: "Company Name *", name: "name", placeholder: "e.g. Acme Corp" },
+            { label: "Company Name *", name: "name", placeholder: "e.g. Esri" },
             { label: "Industry", name: "industry", placeholder: "e.g. Technology" },
-            { label: "Net Zero By", name: "netZeroBy", placeholder: "e.g. 2050" },
-            { label: "Renewable Energy %", name: "renewableEnergyPct", placeholder: "e.g. ~40%" },
-            { label: "Women in Leadership %", name: "womenInLeadershipPct", placeholder: "e.g. ~35%" },
-            { label: "CEO Pay Ratio", name: "ceoPayRatio", placeholder: "e.g. 150:1" },
+            { label: "Net Zero By", name: "netZeroBy", placeholder: "e.g. 2040" },
+            { label: "Renewable Energy %", name: "renewableEnergyPct", placeholder: "e.g. ~90%" },
+            { label: "Women in Leadership %", name: "womenInLeadershipPct", placeholder: "e.g. ~75%" },
+            { label: "CEO Pay Ratio", name: "ceoPayRatio", placeholder: "e.g. 80:1" },
             { label: "Notes", name: "notes", placeholder: "Any extra context" },
           ].map((field) => (
             <div key={field.name} className="form-group">

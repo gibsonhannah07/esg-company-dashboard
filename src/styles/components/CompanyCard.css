@@ -36,9 +36,11 @@
 }
 
 .company-card.selected {
-  border-color: var(--blue-border);
-  background-color: var(--blue-light);
+  background-color: var(--bg-white);
+  border: 1px solid var(--blue-border);
+  border-top: 3px solid var(--blue-mid);
 }
+
 
 .card-header {
   display: flex;
@@ -86,13 +88,29 @@
 }
 
 .card-btn {
-  width: 100%;
-  background-color: var(--green-light);
-  color: var(--green-dark);
-  border: 1px solid var(--green-border);
-  font-size: 13px;
-  padding: 8px;
+  display: inline-block;
+  align-self: flex-end; 
+
+  background-color: var(--blue-light);
+  color: var(--text-primary);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--blue-mid);
+
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 }
+
+.card-btn:hover {
+  background-color: var(--green-mid);
+  border-color: var(--green-mid);
+  color: #ffffff;
+}
+
 
 .card-btn:hover {
   background-color: var(--green-mid);
