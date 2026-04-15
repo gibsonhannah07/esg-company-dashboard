@@ -79,11 +79,18 @@ export default function Dashboard() {
       <div className="dashboard-header">
         <h2>Company Dashboard</h2>
       </div>
-
+      <div className="dashboard-about">
+        <p>Using this dashboard, users can search companies, filter by industry 
+          to narrow down a search, and click a company’s card to view its ESG 
+          metrics and more information. Users can also utilize the “add and compare” 
+          feature to temporarily add their own data and compare side by side with a company 
+          in our database. </p>
+      </div>
       <div className="search-bar">
+        <label className="search-label">Search a Company: </label>
         <input
           type="text"
-          placeholder="Search a company..."
+          placeholder="e.g. LaunchCode..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
@@ -100,7 +107,7 @@ export default function Dashboard() {
           className="btn-add-company"
           onClick={() => setShowAddModal(true)}
         >
-        + Add & Compare Companies
+        + Add a company
         </button>
       </div>
 

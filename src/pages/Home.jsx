@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import "../styles/pages/Home.css";
+import environmental from "../assets/environmental.png";
+import governance from "../assets/governance.png";
+import social from "../assets/social.png";
+
+
 
 
 export default function Home() {
@@ -7,7 +12,7 @@ export default function Home() {
     <section>
 
       <div className="home-hero">
-        <h2> 🌎 ESG Metrics Dashboard 🌎 </h2>
+        <h2 className="home-hero-title"> 🌎 ESG Metrics Dashboard 👥 </h2>
         <p>
           Browse and compare companies based on three chosen Environmental,
           Social, and Governance (ESG) metrics — so you can make more informed
@@ -39,16 +44,31 @@ export default function Home() {
         <div className="home-tile">
           <h3>🌱 Environmental</h3>
           <p>Renewable energy usage and carbon commitments</p>
+          <img 
+            src={environmental}
+            alt="solar energy graphic " 
+            className="tile-icon"
+            />
         </div>
 
         <div className="home-tile">
           <h3>👥 Social</h3>
-          <p>Women in leadership positions and workforce diversity</p>
+          <p>Women in leadership positions</p>
+          <img 
+            src={social}
+            alt="workplace diversity graphic" 
+            className="tile-icon"
+            />
         </div>
 
         <div className="home-tile">
           <h3>🏛 Governance</h3>
           <p>CEO pay ratio compared to median employee pay</p>
+          <img 
+            src={governance}
+            alt="graphic showing two hands and money" 
+            className="tile-icon"
+            />
         </div>
 
       </div>

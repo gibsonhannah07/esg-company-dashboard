@@ -9,7 +9,20 @@
   font-size: clamp(18px, 3vw, 24px);
   font-weight: 700;
   color: var(--text-primary);
+  pointer-events: none;
 }
+
+
+.dashboard-about {
+  max-width: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
 
 .search-bar {
   margin-bottom: 16px;
@@ -55,6 +68,15 @@
 .btn-add-company:hover {
   background-color: var(--blue-dark);
 }
+
+.search-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px; 
+}
+
 
 .search-bar input,
 .filter-bar select,
